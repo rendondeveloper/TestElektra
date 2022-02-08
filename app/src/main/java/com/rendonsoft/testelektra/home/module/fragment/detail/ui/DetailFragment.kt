@@ -10,14 +10,13 @@ import com.rendonsoft.testelektra.R
 import com.rendonsoft.testelektra.databinding.FragmentDetailBinding
 import com.rendonsoft.testelektra.home.module.fragment.detail.repository.model.PokemonDetailView
 import com.rendonsoft.testelektra.home.module.fragment.detail.repository.repo.DetailRepository
-import com.rendonsoft.testelektra.home.module.fragment.abilities.repository.retrofit.AbilityApi
 import com.rendonsoft.testelektra.home.module.fragment.detail.repository.retrofit.DetailApi
 import com.rendonsoft.testelektra.home.module.fragment.detail.usescases.remote.DetailRemoteUsesCases
 import com.rendonsoft.testelektra.home.module.fragment.detail.viewmodel.DetailViewModel
 import com.rendonsoft.testelektra.utils.extensions.getViewModel
 import com.rendonsoft.testelektra.utils.model.ArgumentBundle.NAME_POKEMON
 import com.rendonsoft.testelektra.utils.model.ArgumentBundle.URL_EVOLUTION_CHAIN
-import com.rendonsoft.testelektra.utils.retrofit.build.RetrofitApp
+import com.rendonsoft.testelektra.utils.retrofit.builder.RetrofitApp
 import com.rendonsoft.testelektra.utils.retrofit.model.dataclass.URL_BASE
 
 class DetailFragment : Fragment() {

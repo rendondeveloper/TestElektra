@@ -17,9 +17,7 @@ import com.rendonsoft.testelektra.utils.extensions.getViewModel
 import com.rendonsoft.testelektra.utils.extensions.log
 import com.rendonsoft.testelektra.utils.model.ArgumentBundle.NAME_POKEMON
 import com.rendonsoft.testelektra.utils.model.ArgumentBundle.URL_EVOLUTION_CHAIN
-import com.rendonsoft.testelektra.utils.retrofit.build.RetrofitApp
-import com.rendonsoft.testelektra.utils.retrofit.model.dataclass.URL_BASE
-import kotlinx.android.synthetic.main.fragment_home.*
+import com.rendonsoft.testelektra.utils.retrofit.builder.RetrofitApp
 
 class EvolutionChainFragment : Fragment() {
 

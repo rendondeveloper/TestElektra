@@ -3,7 +3,7 @@ package com.rendonsoft.testelektra.home.module.fragment.evolutionchain.usescases
 import com.rendonsoft.testelektra.home.module.fragment.evolutionchain.repository.model.PokemonEvolution
 import com.rendonsoft.testelektra.home.module.fragment.evolutionchain.repository.retrofit.EvolutionChainApi
 import com.rendonsoft.testelektra.utils.model.EvolutionChainRemoteData
-import com.rendonsoft.testelektra.utils.retrofit.build.RetrofitApp
+import com.rendonsoft.testelektra.utils.retrofit.builder.RetrofitApp
 import com.rendonsoft.testelektra.utils.retrofit.managercall.ManagerCall
 import com.rendonsoft.testelektra.utils.retrofit.model.dataclass.ResponseData
 

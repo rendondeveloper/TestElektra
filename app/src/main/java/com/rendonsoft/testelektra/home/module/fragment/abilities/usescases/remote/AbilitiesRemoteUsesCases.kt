@@ -3,7 +3,7 @@ package com.rendonsoft.testelektra.home.module.fragment.abilities.usescases.remo
 import com.rendonsoft.testelektra.home.module.fragment.abilities.repository.retrofit.AbilityApi
 import com.rendonsoft.testelektra.home.module.fragment.abilities.repository.model.AbilitiesPokemon
 import com.rendonsoft.testelektra.utils.model.AbilitiesRemoteData
-import com.rendonsoft.testelektra.utils.retrofit.build.RetrofitApp
+import com.rendonsoft.testelektra.utils.retrofit.builder.RetrofitApp
 import com.rendonsoft.testelektra.utils.retrofit.managercall.ManagerCall
 import com.rendonsoft.testelektra.utils.retrofit.model.dataclass.ResponseData
 

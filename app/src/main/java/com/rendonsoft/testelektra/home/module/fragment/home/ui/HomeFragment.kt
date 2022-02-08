@@ -18,7 +18,7 @@ import com.rendonsoft.testelektra.home.usescases.homeusescases.remote.HomeRemote
 import com.rendonsoft.testelektra.home.module.fragment.home.viewmodel.HomeViewModel
 import com.rendonsoft.testelektra.utils.extensions.getViewModel
 import com.rendonsoft.testelektra.utils.model.ArgumentBundle.NAME_POKEMON
-import com.rendonsoft.testelektra.utils.retrofit.build.RetrofitApp
+import com.rendonsoft.testelektra.utils.retrofit.builder.RetrofitApp
 import com.rendonsoft.testelektra.utils.retrofit.model.dataclass.URL_BASE
 import com.rendonsoft.testelektra.utils.room.instance.TestElektraDataBase
 import com.rendonsoft.testelektra.utils.room.model.PokemonLocal

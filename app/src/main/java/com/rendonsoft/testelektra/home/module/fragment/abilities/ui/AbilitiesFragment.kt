@@ -15,7 +15,7 @@ import com.rendonsoft.testelektra.home.module.fragment.abilities.usescases.remot
 import com.rendonsoft.testelektra.home.module.fragment.abilities.viewmodel.AbilitiesViewModel
 import com.rendonsoft.testelektra.utils.extensions.getViewModel
 import com.rendonsoft.testelektra.utils.model.ArgumentBundle.NAME_POKEMON
-import com.rendonsoft.testelektra.utils.retrofit.build.RetrofitApp
+import com.rendonsoft.testelektra.utils.retrofit.builder.RetrofitApp
 import com.rendonsoft.testelektra.utils.retrofit.model.dataclass.URL_BASE
 
 class AbilitiesFragment : Fragment() {
