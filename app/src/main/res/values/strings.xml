@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">TestElektra</string>
+
+    <string name="detail_tv_base_happiness">Felicidad base</string>
+    <string name="detail_tv_capture">Tasa de captura</string>
+    <string name="detail_tv_color">Color</string>
+    <string name="detail_tv_egg_group">grupos de huevos</string>
+
+    <string name="detail_button_evolution_chain">Linea Evolutiva</string>
+    <string name="detail_button_abilities">Habilidades</string>
+    <string name="abilities_toolbar_title">Habilidades</string>
+    <string name="evolution_chain_toolbar_title">Linea evolutiva</string>
+    <string name="home_toolbar_title">Home</string>
+    <string name="is_favorite">favorito -</string>
+    <string name="has_error">error -</string>
 </resources>

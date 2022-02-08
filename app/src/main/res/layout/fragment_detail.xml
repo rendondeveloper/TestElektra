@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.module.fragment.detail.ui.DetailFragment">
+
+    <data>
+        <variable
+            name="item"
+            type="com.rendonsoft.testelektra.home.module.fragment.detail.repository.model.PokemonDetailView" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/tbDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:titleTextColor="@color/white"
+
+            android:title="@{item.name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLabelBaseHappiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/detail_tv_base_happiness"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tbDetail" />
+
+        <TextView
+            android:id="@+id/tvLabelBaseHappinessData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@{item.baseHappiness}"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLabelBaseHappiness"
+            app:layout_constraintStart_toEndOf="@+id/tvLabelBaseHappiness"
+            app:layout_constraintTop_toTopOf="@+id/tvLabelBaseHappiness"
+            tools:text=" 70" />
+
+        <TextView
+            android:id="@+id/tvCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="@string/evolution_chain_toolbar_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelBaseHappiness" />
+
+        <TextView
+            android:id="@+id/tvCaptureData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@{item.captureRate}"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCapture"
+            app:layout_constraintStart_toEndOf="@+id/tvCapture"
+            app:layout_constraintTop_toTopOf="@+id/tvCapture"
+            tools:text=" 70" />
+
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="@string/detail_tv_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCapture" />
+
+        <TextView
+            android:id="@+id/tvColorData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@{item.color}"
+            app:layout_constraintBottom_toBottomOf="@+id/tvColor"
+            app:layout_constraintStart_toEndOf="@+id/tvColor"
+            app:layout_constraintTop_toTopOf="@+id/tvColor"
+            tools:text=" 70" />
+
+        <TextView
+            android:id="@+id/tvGroupEgg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="@string/detail_tv_egg_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvColor" />
+
+        <TextView
+            android:id="@+id/tvGroupEggData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@{item.eggGroup}"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGroupEgg"
+            app:layout_constraintStart_toEndOf="@+id/tvGroupEgg"
+            app:layout_constraintTop_toTopOf="@+id/tvGroupEgg"
+            tools:text=" 70" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEvolutionChain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/detail_button_evolution_chain"
+            app:layout_constraintBottom_toTopOf="@+id/btnAbilities"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAbilities"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/detail_button_abilities"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

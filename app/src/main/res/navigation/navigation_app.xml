@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rendonsoft.testelektra.home.module.fragment.home.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.rendonsoft.testelektra.home.module.fragment.detail.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_abilitiesFragment"
+            app:destination="@id/abilitiesFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_evolutionChainFragment"
+            app:destination="@id/evolutionChainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/abilitiesFragment"
+        android:name="com.rendonsoft.testelektra.home.module.fragment.abilities.ui.AbilitiesFragment"
+        android:label="fragment_abilities"
+        tools:layout="@layout/fragment_abilities" />
+    <fragment
+        android:id="@+id/evolutionChainFragment"
+        android:name="com.rendonsoft.testelektra.home.module.fragment.evolutionchain.ui.EvolutionChainFragment"
+        android:label="fragment_evolution_chain"
+        tools:layout="@layout/fragment_evolution_chain" />
+</navigation>
